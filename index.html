@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac’s Free Flash Games (MFFG)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1 {
+            margin: 0;
+        }
+        .game {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .game object {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .game h2 {
+            margin-top: 0;
+        }
+        .game p {
+            margin: 0.5rem 0;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+    <header>
+        <h1>Mac’s Free Flash Games (MFFG)</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Alien Hominid -->
+        <div class="game" id="alienHominid">
+            <h2>Alien Hominid</h2>
+            <p>A classic run-and-gun game where you play as an alien trying to escape from government forces. It features humor and challenging gameplay.</p>
+            <object data="https://xxsibxx.github.io/ruffleembedsetup112/swf/59593_alien_booya202c.swf" type="application/x-shockwave-flash" id="alienHominidObject">
+                <param name="movie" value="https://xxsibxx.github.io/ruffleembedsetup112/swf/59593_alien_booya202c.swf">
+            </object>
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this)">Fullscreen</button>
+        </div>
+
+        <!-- Pico's School -->
+        <div class="game" id="picosSchool">
+            <h2>Pico's School</h2>
+            <p>A quirky point-and-click adventure game where you help Pico navigate through a series of humorous and often violent scenarios at school.</p>
+            <object data="https://uploads.ungrounded.net/310000/310349_pico_2006.swf" type="application/x-shockwave-flash" id="picosSchoolObject">
+                <param name="movie" value="https://uploads.ungrounded.net/310000/310349_pico_2006.swf">
+            </object>
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this)">Fullscreen</button>
+        </div>
+
+        <!-- Super Meat Boy -->
+        <div class="game" id="superMeatBoy">
+            <h2>Super Meat Boy</h2>
+            <p>Guide Meat Boy through a series of challenging levels filled with obstacles and enemies. It's known for its fast-paced action and tight controls.</p>
+            <object data="https://www.flashgames.org/super_meat_boy.swf" type="application/x-shockwave-flash" id="superMeatBoyObject">
+                <param name="movie" value="https://www.flashgames.org/super_meat_boy.swf">
+            </object>
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this)">Fullscreen</button>
+        </div>
+
+        <!-- Pico vs. Bear -->
+        <div class="game" id="picoVsBear">
+            <h2>Pico vs. Bear</h2>
+            <p>An action-packed game where Pico faces off against various bear enemies. Known for its fun combat and colorful graphics.</p>
+            <object data="https://example.com/path/to/pico_vs_bear_1999_original.swf" type="application/x-shockwave-flash" id="picoVsBearObject">
+                <param name="movie" value="https://example.com/path/to/pico_vs_bear_1999_original.swf">
+            </object>
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this)">Fullscreen</button>
+        </div>
+
+        <!-- Pico vs. Überkids -->
+        <div class="game" id="picoVsUberkids">
+            <h2>Pico vs. Überkids</h2>
+            <p>In this game, Pico battles against an army of Überkids. It features engaging gameplay with a mix of humor and action.</p>
+            <object data="https://uploads.ungrounded.net/310000/310598_uberkids_2006.swf?1146497053" type="application/x-shockwave-flash" id="picoVsUberkidsObject">
+                <param name="movie" value="https://uploads.ungrounded.net/310000/310598_uberkids_2006.swf?1146497053">
+            </object>
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this)">Fullscreen</button>
+        </div>
+
+        <!-- Bloodshed in The Big House That Blew -->
+        <div class="game" id="bloodshedInBigHouse">
+            <h2>Bloodshed in The Big House That Blew</h2>
+            <p>Play the older version of Pico vs. Bear, featuring a different take on the classic gameplay with retro graphics and mechanics.</p>
+            <object data="https://example.com/path/to/bloodshed_in_big_house_that_blew.swf" type="application/x-shockwave-flash" id="bloodshedInBigHouseObject">
+                <param name="movie" value="https://example.com/path/to/bloodshed_in_big_house_that_blew.swf">
+            </object>
+            <button class="fullscreen-btn" onclick="toggleFullscreen(this)">Fullscreen</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Mac's Free Flash Games (MFFG). All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleFullscreen(button) {
+            let object = button.parentElement.querySelector('object');
+            if (object.requestFullscreen) {
+                object.requestFullscreen();
+            } else if (object.mozRequestFullScreen) { /* Firefox */
+                object.mozRequestFullScreen();
+            } else if (object.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                object.webkitRequestFullscreen();
+            } else if (object.msRequestFullscreen) { /* IE/Edge */
+                object.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
